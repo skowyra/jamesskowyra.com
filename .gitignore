@@ -1,0 +1,57 @@
+# Composer dependencies
+/vendor
+/web/core
+/web/libraries
+/web/modules/contrib
+/web/themes/contrib
+/web/profiles/contrib
+
+# Drupal scaffold files (managed by drupal/core-composer-scaffold)
+/web/autoload.php
+/web/.csslintrc
+/web/.editorconfig
+/web/.eslintignore
+/web/.eslintrc.json
+/web/.gitattributes
+/web/.ht.router.php
+/web/.htaccess
+/web/INSTALL.txt
+/web/README.txt
+/web/example.gitignore
+/web/index.php
+/web/robots.txt
+/web/update.php
+/web/web.config
+
+# Drupal files directory
+/web/sites/default/files
+/web/sites/*/files
+
+# Drupal settings files (contain credentials)
+/web/sites/default/settings.php
+/web/sites/default/services.yml
+/web/sites/*/settings.php
+/web/sites/*/services.yml
+
+# Allow the default example settings files
+!/web/sites/default/default.settings.php
+!/web/sites/default/default.services.yml
+
+# DDEV configuration is committed, but ignore local overrides
+/.ddev/.gitignore
+/.ddev/config.local.yaml
+
+# Drush
+/drush/Commands/contrib
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea
+.vscode
+*.swp
+*.swo
+/.editorconfig
+/.gitattributes
