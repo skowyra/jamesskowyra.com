@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
 /* ----------------------------------------
    Base — yours to customize
 ---------------------------------------- */
@@ -12,6 +14,10 @@ body {
   font-family: sans-serif;
   background: #fff;
   color: #111;
+}
+
+h1 {
+  font-family: 'Italiana', serif;
 }
 
 header {
@@ -38,15 +44,47 @@ main {
 
 /* Gallery grid */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: flex;
   gap: 1rem;
 }
 
-.gallery img {
+.gallery-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gallery-col--left {
+  flex: 2;
+}
+
+.gallery-col--right {
+  flex: 1;
+}
+
+.gallery-col img {
   width: 100%;
-  aspect-ratio: 3 / 2;
   object-fit: cover;
   cursor: pointer;
   display: block;
+}
+
+.gallery-col--left img {
+  object-fit: contain;
+  object-position: left;
+}
+
+.gallery-col--right img {
+  aspect-ratio: 2 / 3;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+  }
+
+  .gallery-col--right img {
+    aspect-ratio: unset;
+    object-fit: contain;
+  }
 }

@@ -8,7 +8,7 @@
 
   if (!gallery || !overlay) return;
 
-  const images = Array.from(gallery.querySelectorAll('img'));
+  const images = Array.from(gallery.querySelectorAll('.gallery-col img'));
   let current = 0;
 
   function open(index) {
