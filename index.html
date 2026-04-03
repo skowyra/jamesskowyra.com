@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James Skowyra</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="gallery" id="gallery">
+      <!-- Example images — replace src with your CDN URLs -->
+      <img src="https://cdn.example.com/photo-01.jpg" alt="" data-index="0">
+      <img src="https://cdn.example.com/photo-02.jpg" alt="" data-index="1">
+      <img src="https://cdn.example.com/photo-03.jpg" alt="" data-index="2">
+      <img src="https://cdn.example.com/photo-04.jpg" alt="" data-index="3">
+      <img src="https://cdn.example.com/photo-05.jpg" alt="" data-index="4">
+      <img src="https://cdn.example.com/photo-06.jpg" alt="" data-index="5">
+    </div>
+  </main>
+
+  <!-- Slideshow overlay -->
+  <div class="slideshow-overlay" id="slideshow" aria-modal="true" role="dialog" aria-label="Photo slideshow" hidden>
+    <button class="slideshow-close" id="slideshow-close" aria-label="Close">&#x2715;</button>
+    <button class="slideshow-prev" id="slideshow-prev" aria-label="Previous">&#x2190;</button>
+    <div class="slideshow-image-wrap">
+      <img class="slideshow-image" id="slideshow-image" src="" alt="">
+    </div>
+    <button class="slideshow-next" id="slideshow-next" aria-label="Next">&#x2192;</button>
+  </div>
+
+  <script src="js/slideshow.js"></script>
+</body>
+</html>
